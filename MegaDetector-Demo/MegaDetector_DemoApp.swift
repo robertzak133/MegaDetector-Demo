@@ -10,23 +10,20 @@ import SwiftData
 
 @main
 struct MegaDetector_DemoApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+    // @StateObject tells SwiftUI preview handler to ignore this initialization
+    @StateObject private var dataModel = DataModel()
+ 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewfinderImage = dataModel.viewfinderImage
+            let md6Detector = dataModel.camera.md6Detector
+            ContentView(viewfinderImage: viewfinderImage,
+                        matchingObservations: md6Detector!.matchingObservations, inferenceTime: md6Detector!.inferenceTime,
+                        isDetectorEnabled: $dataModel.isDetectorEnabled)
+            .task {
+                await dataModel.camera.start()
+            }
         }
-        .modelContainer(sharedModelContainer)
     }
 }
+

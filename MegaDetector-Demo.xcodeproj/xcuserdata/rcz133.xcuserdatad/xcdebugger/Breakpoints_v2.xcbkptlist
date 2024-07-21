@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2AD0583A-D1A3-4711-9206-9C010D84C6A9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15F1D8BC-B43A-403F-85C8-11E5449745A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MegaDetector-Demo/Camera.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
+            landmarkName = "start()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "15F1D8BC-B43A-403F-85C8-11E5449745A1 - bde1e83f76dc7546"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MegaDetector_Demo.Camera.start() async -&gt; ()"
+                  moduleName = "MegaDetector-Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertzakjr%201/Library/CloudStorage/GoogleDrive-robert.zak@comcast.net/My%20Drive/local_repositories/MegaDetector-Demo/MegaDetector-Demo/Camera.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "266"
+                  endingLineNumber = "266"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "15F1D8BC-B43A-403F-85C8-11E5449745A1 - 6bb325b5f6ca2d33"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MegaDetector_Demo.Camera.start() async -&gt; ()"
+                  moduleName = "MegaDetector-Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertzakjr%201/Library/CloudStorage/GoogleDrive-robert.zak@comcast.net/My%20Drive/local_repositories/MegaDetector-Demo/MegaDetector-Demo/Camera.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "266"
+                  endingLineNumber = "266"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "15F1D8BC-B43A-403F-85C8-11E5449745A1 - a9186a7d4cb19144"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MegaDetector_Demo.Camera.start() async -&gt; ()"
+                  moduleName = "MegaDetector-Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertzakjr%201/Library/CloudStorage/GoogleDrive-robert.zak@comcast.net/My%20Drive/local_repositories/MegaDetector-Demo/MegaDetector-Demo/Camera.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "266"
+                  endingLineNumber = "266"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

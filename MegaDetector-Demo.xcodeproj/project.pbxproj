@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		53B297EA2C43621100E8439B /* MegaDetector_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B297E92C43621100E8439B /* MegaDetector_DemoApp.swift */; };
 		53B297EC2C43621100E8439B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B297EB2C43621100E8439B /* ContentView.swift */; };
-		53B297EE2C43621100E8439B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B297ED2C43621100E8439B /* Item.swift */; };
 		53B297F02C43621400E8439B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B297EF2C43621400E8439B /* Assets.xcassets */; };
 		53B297F32C43621400E8439B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B297F22C43621400E8439B /* Preview Assets.xcassets */; };
 		53B297FD2C43621400E8439B /* MegaDetector_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B297FC2C43621400E8439B /* MegaDetector_DemoTests.swift */; };
 		53B298072C43621400E8439B /* MegaDetector_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B298062C43621400E8439B /* MegaDetector_DemoUITests.swift */; };
 		53B298092C43621400E8439B /* MegaDetector_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B298082C43621400E8439B /* MegaDetector_DemoUITestsLaunchTests.swift */; };
+		53B298162C44437C00E8439B /* MD6YoloV9CTriggerDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B298152C44437C00E8439B /* MD6YoloV9CTriggerDetector.swift */; };
+		53B298192C44450400E8439B /* MDV6b-yolov9c.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 53B298182C44450300E8439B /* MDV6b-yolov9c.mlpackage */; };
+		53B2981B2C4448ED00E8439B /* ViewfinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2981A2C4448ED00E8439B /* ViewfinderView.swift */; };
+		53B2981D2C444A9000E8439B /* DetectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2981C2C444A9000E8439B /* DetectorView.swift */; };
+		53B2981F2C444B4800E8439B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2981E2C444B4800E8439B /* DataModel.swift */; };
+		53B298212C4464F900E8439B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B298202C4464F900E8439B /* Camera.swift */; };
+		53B298232C447E2B00E8439B /* ScreenPreviewOutputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B298222C447E2B00E8439B /* ScreenPreviewOutputHandler.swift */; };
+		53B2982C2C4C983200E8439B /* CIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2982B2C4C983200E8439B /* CIImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,6 @@
 		53B297E62C43621100E8439B /* MegaDetector-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MegaDetector-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B297E92C43621100E8439B /* MegaDetector_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaDetector_DemoApp.swift; sourceTree = "<group>"; };
 		53B297EB2C43621100E8439B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		53B297ED2C43621100E8439B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		53B297EF2C43621400E8439B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53B297F22C43621400E8439B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		53B297F82C43621400E8439B /* MegaDetector-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MegaDetector-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +52,14 @@
 		53B298022C43621400E8439B /* MegaDetector-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MegaDetector-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B298062C43621400E8439B /* MegaDetector_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaDetector_DemoUITests.swift; sourceTree = "<group>"; };
 		53B298082C43621400E8439B /* MegaDetector_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaDetector_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53B298152C44437C00E8439B /* MD6YoloV9CTriggerDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD6YoloV9CTriggerDetector.swift; sourceTree = "<group>"; };
+		53B298182C44450300E8439B /* MDV6b-yolov9c.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = "MDV6b-yolov9c.mlpackage"; sourceTree = "<group>"; };
+		53B2981A2C4448ED00E8439B /* ViewfinderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewfinderView.swift; sourceTree = "<group>"; };
+		53B2981C2C444A9000E8439B /* DetectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectorView.swift; sourceTree = "<group>"; };
+		53B2981E2C444B4800E8439B /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		53B298202C4464F900E8439B /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		53B298222C447E2B00E8439B /* ScreenPreviewOutputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenPreviewOutputHandler.swift; sourceTree = "<group>"; };
+		53B2982B2C4C983200E8439B /* CIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImageExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				53B297E92C43621100E8439B /* MegaDetector_DemoApp.swift */,
-				53B297EB2C43621100E8439B /* ContentView.swift */,
-				53B297ED2C43621100E8439B /* Item.swift */,
+				53B298152C44437C00E8439B /* MD6YoloV9CTriggerDetector.swift */,
+				53B2981E2C444B4800E8439B /* DataModel.swift */,
+				53B298202C4464F900E8439B /* Camera.swift */,
+				53B298272C4761C500E8439B /* SwiftUI Views */,
+				53B298222C447E2B00E8439B /* ScreenPreviewOutputHandler.swift */,
+				53B2982A2C4C980100E8439B /* Extensions */,
+				53B298172C44438500E8439B /* CoreML Model */,
 				53B297EF2C43621400E8439B /* Assets.xcassets */,
 				53B297F12C43621400E8439B /* Preview Content */,
 			);
@@ -128,6 +147,32 @@
 				53B298082C43621400E8439B /* MegaDetector_DemoUITestsLaunchTests.swift */,
 			);
 			path = "MegaDetector-DemoUITests";
+			sourceTree = "<group>";
+		};
+		53B298172C44438500E8439B /* CoreML Model */ = {
+			isa = PBXGroup;
+			children = (
+				53B298182C44450300E8439B /* MDV6b-yolov9c.mlpackage */,
+			);
+			path = "CoreML Model";
+			sourceTree = "<group>";
+		};
+		53B298272C4761C500E8439B /* SwiftUI Views */ = {
+			isa = PBXGroup;
+			children = (
+				53B2981C2C444A9000E8439B /* DetectorView.swift */,
+				53B2981A2C4448ED00E8439B /* ViewfinderView.swift */,
+				53B297EB2C43621100E8439B /* ContentView.swift */,
+			);
+			path = "SwiftUI Views";
+			sourceTree = "<group>";
+		};
+		53B2982A2C4C980100E8439B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				53B2982B2C4C983200E8439B /* CIImageExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B298212C4464F900E8439B /* Camera.swift in Sources */,
+				53B2981F2C444B4800E8439B /* DataModel.swift in Sources */,
+				53B298162C44437C00E8439B /* MD6YoloV9CTriggerDetector.swift in Sources */,
 				53B297EC2C43621100E8439B /* ContentView.swift in Sources */,
-				53B297EE2C43621100E8439B /* Item.swift in Sources */,
+				53B298192C44450400E8439B /* MDV6b-yolov9c.mlpackage in Sources */,
+				53B298232C447E2B00E8439B /* ScreenPreviewOutputHandler.swift in Sources */,
+				53B2981D2C444A9000E8439B /* DetectorView.swift in Sources */,
+				53B2982C2C4C983200E8439B /* CIImageExtensions.swift in Sources */,
+				53B2981B2C4448ED00E8439B /* ViewfinderView.swift in Sources */,
 				53B297EA2C43621100E8439B /* MegaDetector_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +481,7 @@
 				DEVELOPMENT_TEAM = 7JQLHHTEMW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "MegaDetector-Demo uses camera for live video feed";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +511,7 @@
 				DEVELOPMENT_TEAM = 7JQLHHTEMW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "MegaDetector-Demo uses camera for live video feed";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
