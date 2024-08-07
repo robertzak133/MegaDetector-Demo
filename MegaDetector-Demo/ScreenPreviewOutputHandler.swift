@@ -15,6 +15,8 @@ import os.log
 class ScreenPreviewOutputHandler : NSObject {
 
     public var screenPreviewOutput = AVCaptureVideoDataOutput()
+    private var lastFrameTime: CMTime = CMTime()
+    public var frameRate: Double = 0.0
     
     weak var delegate : OutputHandlerDelegate?
     
@@ -87,6 +89,13 @@ extension ScreenPreviewOutputHandler: AVCaptureVideoDataOutputSampleBufferDelega
         
         let image = CIImage(cvPixelBuffer: pixelBuffer)
         addToPreviewStream?(image)
+        
+        let currentTime = CMClockGetTime(CMClockGetHostTimeClock())
+        if lastFrameTime.isValid {
+            let frameInterval = CMTimeSubtract(currentTime, lastFrameTime)
+            frameRate = 1.0 / (CMTimeGetSeconds(frameInterval))
+        }
+        lastFrameTime = currentTime
     }
     
     

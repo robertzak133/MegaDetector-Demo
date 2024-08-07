@@ -18,7 +18,7 @@ struct MegaDetector_DemoApp: App {
             let viewfinderImage = dataModel.viewfinderImage
             let md6Detector = dataModel.camera.md6Detector
             ContentView(viewfinderImage: viewfinderImage,
-                        matchingObservations: md6Detector!.matchingObservations, inferenceTime: md6Detector!.inferenceTime,
+                        matchingObservations: md6Detector!.matchingObservations, inferenceTime: md6Detector!.inferenceTime, frameRate: dataModel.camera.screenPreviewOutputHandler.frameRate,
                         isDetectorEnabled: $dataModel.isDetectorEnabled)
             .task {
                 await dataModel.camera.start()

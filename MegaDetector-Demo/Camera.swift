@@ -24,6 +24,7 @@ class Camera: NSObject, OutputHandlerDelegate {
     public var screenPreviewOutputHandler = ScreenPreviewOutputHandler()
     
     var md6Detector: MD6YoloV9CDetector?
+
     
     private var sessionQueue: DispatchQueue!
    

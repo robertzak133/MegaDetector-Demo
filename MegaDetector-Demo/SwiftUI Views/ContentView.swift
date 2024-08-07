@@ -12,6 +12,7 @@ struct ContentView: View {
     let viewfinderImage : Image?
     let matchingObservations : [VNRecognizedObjectObservation]
     let inferenceTime : Double
+    let frameRate : Double
     @Binding var isDetectorEnabled : Bool
     @State private var orientation = UIDevice.current.orientation
     
@@ -27,6 +28,10 @@ struct ContentView: View {
                 Toggle("Detector Enabled", isOn: $isDetectorEnabled)
                     .toggleStyle(SwitchToggleStyle())
                 Spacer()
+            }
+            VStack {
+                    Spacer()
+                Text(String(format: "%.1f FPS", frameRate))
             }
         }
         .detectOrientation($orientation)
@@ -57,7 +62,8 @@ extension View {
     //     VNRecognizedObjectObservation with valid data
     ContentView(viewfinderImage: Image("ViewfindViewPreview"),
                 matchingObservations: [],
-                inferenceTime: 22.0,
+                inferenceTime: 22.0, 
+                frameRate: 30.0,
                 isDetectorEnabled: .constant(true) )
 }
 
